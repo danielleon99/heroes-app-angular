@@ -9,15 +9,15 @@
         </mat-toolbar>
 
         <mat-nav-list>
-            <a routerLink="./list" mat-list-item>
+            <a routerLink="./list" mat-list-item (click)="sidenav.toggle()">
                 <mat-icon mat-list-icon>label</mat-icon>
                 <span>List of heroes</span>
             </a>
-            <a routerLink="./add" mat-list-item>
+            <a routerLink="./add" mat-list-item (click)="sidenav.toggle()">
                 <mat-icon mat-list-icon>add</mat-icon>
                 <span>Add heroe</span>
             </a>
-            <a routerLink="./search" mat-list-item>
+            <a routerLink="./search" mat-list-item (click)="sidenav.toggle()">
                 <mat-icon mat-list-icon>search</mat-icon>
                 <span>Search heroe</span>
             </a>
