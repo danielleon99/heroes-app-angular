@@ -5,8 +5,7 @@ import { IHeroe } from '../../interfaces/heroe.interface';
 @Component({
   selector: 'app-list',
   templateUrl: './list.component.html',
-  styles: [
-  ]
+  styles: []
 })
 export class ListComponent implements OnInit {
 

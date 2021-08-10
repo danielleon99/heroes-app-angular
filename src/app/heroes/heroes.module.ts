@@ -11,14 +11,20 @@ import { SearchComponent } from './pages/search/search.component';
 import { HeroeComponent } from './pages/heroe/heroe.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ListComponent } from './pages/list/list.component';
+import { CardHeroeComponent } from './components/card-heroe/card-heroe.component';
+import { ImagePipe } from './pipes/image.pipe';
 
 @NgModule({
   declarations: [
+    
     AddComponent,
     SearchComponent,
     HeroeComponent,
     HomeComponent,
-    ListComponent
+    ListComponent,
+    CardHeroeComponent,
+
+    ImagePipe
   ],
   imports: [
     CommonModule,

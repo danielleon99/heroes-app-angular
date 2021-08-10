@@ -1,9 +1,8 @@
-<p>list works!</p>
-
-<ul>
-
-    <li *ngFor="let heroe of heroes">
-        {{heroe.superhero}}
-    </li>
-
-</ul>
+<h1>List of heroes</h1>
+<mat-divider></mat-divider>
+<br>
+<div fxLayout="row wrap" fxLayoutAlign="center" fxLayoutGap="20px" fxLayout.xs="column">
+    <div fxFlex="20" fxFlex.lg="15" fxFlex.sm="30" *ngFor="let heroe of heroes">
+        <app-card-heroe [heroe]="heroe"></app-card-heroe>
+    </div>
+</div>
