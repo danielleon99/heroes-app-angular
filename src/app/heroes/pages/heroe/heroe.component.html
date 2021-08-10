@@ -1,4 +1,4 @@
-<mat-grid-list cols="1" *ngIf="!heroe; else divHeroe" >
+<mat-grid-list cols="1" *ngIf="!heroe; else divHeroe">
     <mat-grid-tile>
         <mat-spinner>
 
@@ -7,7 +7,11 @@
 </mat-grid-list>
 
 <ng-template #divHeroe>
-    <app-card-heroe [heroe]="heroe">
 
-    </app-card-heroe>
+    <div fxLayout="row" fxLayout.xs="column" fxLayoutGap="30px">
+        <app-card-heroe [heroe]="heroe">
+
+        </app-card-heroe>
+    </div>
+
 </ng-template>
