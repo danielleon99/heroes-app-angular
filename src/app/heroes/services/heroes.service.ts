@@ -28,4 +28,16 @@ export class HeroesService {
   getAdvice(term: string): Observable<IHeroe[]> {
     return this.httpClient.get<IHeroe[]>(`${this.baseURL}/heroes?q=${term}&limit=5`);
   }
+
+  createHeroe(heroe: IHeroe): Observable<IHeroe> {
+    return this.httpClient.post<IHeroe>(`${this.baseURL}/heroes`, heroe);
+  }
+
+  updateHeroe(heroe: IHeroe): Observable<IHeroe> {
+    return this.httpClient.put<IHeroe>(`${this.baseURL}/heroes/${heroe.id}`, heroe);
+  }
+
+  deleteHeroe(id: string) {
+    return this.httpClient.delete(`${this.baseURL}/heroes/${id}`);
+  }
 }

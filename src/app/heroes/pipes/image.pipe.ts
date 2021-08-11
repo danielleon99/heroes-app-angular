@@ -10,9 +10,10 @@ export class ImagePipe implements PipeTransform {
 
     const path: string = 'assets/heroes/';
 
-    return `${path}${heroe.id}.jpg`
+    if (heroe.id)
+      return `assets/heroes/${heroe.id}.jpg`
 
-    // return `${path}no-image.png`
+    return `assets/no-image.png`
   }
 
 }

@@ -14,10 +14,11 @@ import { HomeComponent } from './pages/home/home.component';
 import { ListComponent } from './pages/list/list.component';
 import { CardHeroeComponent } from './components/card-heroe/card-heroe.component';
 import { ImagePipe } from './pipes/image.pipe';
+import { OrderPipe } from './pipes/order.pipe';
 
 @NgModule({
   declarations: [
-    
+
     AddComponent,
     SearchComponent,
     HeroeComponent,
@@ -25,7 +26,8 @@ import { ImagePipe } from './pipes/image.pipe';
     ListComponent,
     CardHeroeComponent,
 
-    ImagePipe
+    ImagePipe,
+    OrderPipe
   ],
   imports: [
     CommonModule,
