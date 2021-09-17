@@ -15,6 +15,7 @@ import { ListComponent } from './pages/list/list.component';
 import { CardHeroeComponent } from './components/card-heroe/card-heroe.component';
 import { ImagePipe } from './pipes/image.pipe';
 import { OrderPipe } from './pipes/order.pipe';
+import { ConfirmDialogComponent } from './components/confirm-dialog/confirm-dialog.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { OrderPipe } from './pipes/order.pipe';
     CardHeroeComponent,
 
     ImagePipe,
-    OrderPipe
+    OrderPipe,
+    ConfirmDialogComponent
   ],
   imports: [
     CommonModule,
